@@ -1,0 +1,152 @@
+[
+  {
+    "id": "char_01",
+    "perks": { "Combat": 1, "Diplomacy": 2, "Science": 2, "Engineering": 0, "Medicine": 0 },
+    "name": "Startupper"
+  },
+  {
+    "id": "char_02",
+    "perks": { "Combat": 1, "Diplomacy": 1, "Science": 0, "Engineering": 2, "Medicine": 1 },
+    "name": "Handyman"
+  },
+  {
+    "id": "char_03",
+    "perks": { "Combat": 1, "Diplomacy": 1, "Science": 0, "Engineering": 2, "Medicine": 1 },
+    "name": "Handyman"
+  },
+  {
+    "id": "char_04",
+    "perks": { "Combat": 0, "Diplomacy": 0, "Science": 1, "Engineering": 0, "Medicine": 4 },
+    "name": "Dr. Home"
+  },
+  {
+    "id": "char_05",
+    "perks": { "Combat": 1, "Diplomacy": 1, "Science": 2, "Engineering": 1, "Medicine": 0 },
+    "name": "Student"
+  },
+  {
+    "id": "char_06",
+    "perks": { "Combat": 0, "Diplomacy": 1, "Science": 2, "Engineering": 1, "Medicine": 1 },
+    "name": "Lab Assistant"
+  },
+  {
+    "id": "char_07",
+    "perks": { "Combat": 1, "Diplomacy": 2, "Science": 0, "Engineering": 1, "Medicine": 1 },
+    "name": "Manager"
+  },
+  {
+    "id": "char_08",
+    "perks": { "Combat": 1, "Diplomacy": 2, "Science": 1, "Engineering": 1, "Medicine": 0 },
+    "name": "Politician"
+  },
+  {
+    "id": "char_09",
+    "perks": { "Combat": 3, "Diplomacy": 0, "Science": 1, "Engineering": 0, "Medicine": 1 },
+    "name": "Pirate"
+  },
+  {
+    "id": "char_10",
+    "perks": { "Combat": 1, "Diplomacy": 0, "Science": 1, "Engineering": 1, "Medicine": 2 },
+    "name": "Vet"
+  },
+  {
+    "id": "char_11",
+    "perks": { "Combat": 2, "Diplomacy": 1, "Science": 1, "Engineering": 0, "Medicine": 1 },
+    "name": "Bodyguard"
+  },
+  {
+    "id": "char_12",
+    "perks": { "Combat": 1, "Diplomacy": 0, "Science": 1, "Engineering": 1, "Medicine": 2 },
+    "name": "Vet"
+  },
+  {
+    "id": "char_13",
+    "perks": { "Combat": 1, "Diplomacy": 3, "Science": 0, "Engineering": 1, "Medicine": 0 },
+    "name": "Salesman"
+  },
+  {
+    "id": "char_14",
+    "perks": { "Combat": 1, "Diplomacy": 0, "Science": 0, "Engineering": 2, "Medicine": 2 },
+    "name": "Plumber"
+  },
+  {
+    "id": "char_15",
+    "perks": { "Combat": 0, "Diplomacy": 2, "Science": 2, "Engineering": 1, "Medicine": 0 },
+    "name": "Professor"
+  },
+  {
+    "id": "char_16",
+    "perks": { "Combat": 0, "Diplomacy": 1, "Science": 2, "Engineering": 1, "Medicine": 1 },
+    "name": "Lab Assistant"
+  },
+  {
+    "id": "char_17",
+    "perks": { "Combat": 2, "Diplomacy": 2, "Science": 0, "Engineering": 0, "Medicine": 1 },
+    "name": "Sheriff"
+  },
+  {
+    "id": "char_18",
+    "perks": { "Combat": 1, "Diplomacy": 0, "Science": 2, "Engineering": 0, "Medicine": 2 },
+    "name": "Biohacker"
+  },
+  {
+    "id": "char_19",
+    "perks": { "Combat": 1, "Diplomacy": 0, "Science": 0, "Engineering": 1, "Medicine": 3 },
+    "name": "Nurse"
+  },
+  {
+    "id": "char_20",
+    "perks": { "Combat": 1, "Diplomacy": 0, "Science": 2, "Engineering": 2, "Medicine": 0 },
+    "name": "Mechanic"
+  },
+  {
+    "id": "char_21",
+    "perks": { "Combat": 0, "Diplomacy": 2, "Science": 2, "Engineering": 0, "Medicine": 1 },
+    "name": "Counselor"
+  },
+  {
+    "id": "char_22",
+    "perks": { "Combat": 2, "Diplomacy": 0, "Science": 0, "Engineering": 1, "Medicine": 2 },
+    "name": "Combat Medic"
+  },
+  {
+    "id": "char_23",
+    "perks": { "Combat": 1, "Diplomacy": 1, "Science": 1, "Engineering": 2, "Medicine": 0 },
+    "name": "Tinkerer"
+  },
+  {
+    "id": "char_24",
+    "perks": { "Combat": 1, "Diplomacy": 1, "Science": 1, "Engineering": 0, "Medicine": 2 },
+    "name": "Just chill guy"
+  },
+  {
+    "id": "char_25",
+    "perks": { "Combat": 3, "Diplomacy": 2, "Science": 0, "Engineering": 0, "Medicine": 0 },
+    "name": "Warlord"
+  },
+  {
+    "id": "char_26",
+    "perks": { "Combat": 1, "Diplomacy": 0, "Science": 1, "Engineering": 1, "Medicine": 2 },
+    "name": "Vet"
+  },
+  {
+    "id": "char_27",
+    "perks": { "Combat": 2, "Diplomacy": 1, "Science": 0, "Engineering": 1, "Medicine": 1 },
+    "name": "Soldier"
+  },
+  {
+    "id": "char_28",
+    "perks": { "Combat": 0, "Diplomacy": 3, "Science": 1, "Engineering": 1, "Medicine": 0 },
+    "name": "Lawyer"
+  },
+  {
+    "id": "char_29",
+    "perks": { "Combat": 2, "Diplomacy": 0, "Science": 0, "Engineering": 1, "Medicine": 2 },
+    "name": "Combat Medic"
+  },
+  {
+    "id": "char_30",
+    "perks": { "Combat": 0, "Diplomacy": 1, "Science": 0, "Engineering": 4, "Medicine": 0 },
+    "name": "Engineer"
+  }
+]

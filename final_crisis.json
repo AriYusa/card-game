@@ -1,0 +1,132 @@
+[
+  {
+    "id": "crisis_01",
+    "name": "Final Crisis 1: Combat Focused",
+    "requirements": {
+      "Combat": 40,
+      "Diplomacy": 20,
+      "Science": 25,
+      "Engineering": 25,
+      "Medicine": 20
+    },
+    "total_points": 130,
+    "description": "Requires 40 Combat, 25 Science, 25 Engineering, 20 Diplomacy, 20 Medicine (Total: 130 points)"
+  },
+  {
+    "id": "crisis_02",
+    "name": "Final Crisis 2: Science Focused",
+    "requirements": {
+      "Combat": 20,
+      "Diplomacy": 20,
+      "Science": 40,
+      "Engineering": 30,
+      "Medicine": 20
+    },
+    "total_points": 130,
+    "description": "Requires 40 Science, 30 Engineering, 20 Combat, 20 Diplomacy, 20 Medicine (Total: 130 points)"
+  },
+  {
+    "id": "crisis_03",
+    "name": "Final Crisis 3: Engineering Focused",
+    "requirements": {
+      "Combat": 25,
+      "Diplomacy": 20,
+      "Science": 25,
+      "Engineering": 40,
+      "Medicine": 20
+    },
+    "total_points": 130,
+    "description": "Requires 40 Engineering, 25 Combat, 25 Science, 20 Diplomacy, 20 Medicine (Total: 130 points)"
+  },
+  {
+    "id": "crisis_04",
+    "name": "Final Crisis 4: Medicine Focused",
+    "requirements": {
+      "Combat": 20,
+      "Diplomacy": 25,
+      "Science": 20,
+      "Engineering": 25,
+      "Medicine": 40
+    },
+    "total_points": 130,
+    "description": "Requires 40 Medicine, 25 Diplomacy, 25 Engineering, 20 Combat, 20 Science (Total: 130 points)"
+  },
+  {
+    "id": "crisis_05",
+    "name": "Final Crisis 5: Diplomacy Focused",
+    "requirements": {
+      "Combat": 25,
+      "Diplomacy": 40,
+      "Science": 20,
+      "Engineering": 20,
+      "Medicine": 25
+    },
+    "total_points": 130,
+    "description": "Requires 40 Diplomacy, 25 Combat, 25 Medicine, 20 Science, 20 Engineering (Total: 130 points)"
+  },
+  {
+    "id": "crisis_06",
+    "name": "Final Crisis 6: Combat Focused",
+    "requirements": {
+      "Combat": 26,
+      "Diplomacy": 26,
+      "Science": 26,
+      "Engineering": 26,
+      "Medicine": 26
+    },
+    "total_points": 130,
+    "description": "Requires 26 Combat, 26 Diplomacy, 26 Science, 26 Engineering, 26 Medicine (Total: 130 points)"
+  },
+  {
+    "id": "crisis_07",
+    "name": "Final Crisis 7: Combat Focused",
+    "requirements": {
+      "Combat": 35,
+      "Diplomacy": 20,
+      "Science": 35,
+      "Engineering": 20,
+      "Medicine": 20
+    },
+    "total_points": 130,
+    "description": "Requires 35 Combat, 35 Science, 20 Diplomacy, 20 Engineering, 20 Medicine (Total: 130 points)"
+  },
+  {
+    "id": "crisis_08",
+    "name": "Final Crisis 8: Engineering Focused",
+    "requirements": {
+      "Combat": 20,
+      "Diplomacy": 20,
+      "Science": 20,
+      "Engineering": 35,
+      "Medicine": 35
+    },
+    "total_points": 130,
+    "description": "Requires 35 Engineering, 35 Medicine, 20 Combat, 20 Diplomacy, 20 Science (Total: 130 points)"
+  },
+  {
+    "id": "crisis_09",
+    "name": "Final Crisis 9: Combat Focused",
+    "requirements": {
+      "Combat": 30,
+      "Diplomacy": 30,
+      "Science": 30,
+      "Engineering": 20,
+      "Medicine": 20
+    },
+    "total_points": 130,
+    "description": "Requires 30 Combat, 30 Diplomacy, 30 Science, 20 Engineering, 20 Medicine (Total: 130 points)"
+  },
+  {
+    "id": "crisis_10",
+    "name": "Final Crisis 10: Combat Focused",
+    "requirements": {
+      "Combat": 50,
+      "Diplomacy": 20,
+      "Science": 20,
+      "Engineering": 20,
+      "Medicine": 20
+    },
+    "total_points": 130,
+    "description": "Requires 50 Combat, 20 Diplomacy, 20 Science, 20 Engineering, 20 Medicine (Total: 130 points)"
+  }
+]

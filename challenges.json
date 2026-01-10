@@ -1,0 +1,715 @@
+[
+  {
+    "id": "challenge_common_01",
+    "name": "Common Challenge 1",
+    "tier": "Common",
+    "requirements": {
+      "Medicine": 7
+    },
+    "total_points": 7,
+    "victory_points": 1,
+    "description": "Requires 7 Medicine"
+  },
+  {
+    "id": "challenge_common_02",
+    "name": "Common Challenge 2",
+    "tier": "Common",
+    "requirements": {
+      "Combat": 4,
+      "Engineering": 3
+    },
+    "total_points": 7,
+    "victory_points": 1,
+    "description": "Requires 4 Combat + 3 Engineering"
+  },
+  {
+    "id": "challenge_common_03",
+    "name": "Common Challenge 3",
+    "tier": "Common",
+    "requirements": {
+      "Medicine": 5
+    },
+    "total_points": 5,
+    "victory_points": 1,
+    "description": "Requires 5 Medicine"
+  },
+  {
+    "id": "challenge_common_04",
+    "name": "Common Challenge 4",
+    "tier": "Common",
+    "requirements": {
+      "Combat": 7
+    },
+    "total_points": 7,
+    "victory_points": 1,
+    "description": "Requires 7 Combat"
+  },
+  {
+    "id": "challenge_common_05",
+    "name": "Common Challenge 5",
+    "tier": "Common",
+    "requirements": {
+      "Diplomacy": 3,
+      "Engineering": 3
+    },
+    "total_points": 6,
+    "victory_points": 1,
+    "description": "Requires 3 Diplomacy + 3 Engineering"
+  },
+  {
+    "id": "challenge_common_06",
+    "name": "Common Challenge 6",
+    "tier": "Common",
+    "requirements": {
+      "Diplomacy": 6
+    },
+    "total_points": 6,
+    "victory_points": 1,
+    "description": "Requires 6 Diplomacy"
+  },
+  {
+    "id": "challenge_common_07",
+    "name": "Common Challenge 7",
+    "tier": "Common",
+    "requirements": {
+      "Diplomacy": 5
+    },
+    "total_points": 5,
+    "victory_points": 1,
+    "description": "Requires 5 Diplomacy"
+  },
+  {
+    "id": "challenge_common_08",
+    "name": "Common Challenge 8",
+    "tier": "Common",
+    "requirements": {
+      "Medicine": 6
+    },
+    "total_points": 6,
+    "victory_points": 1,
+    "description": "Requires 6 Medicine"
+  },
+  {
+    "id": "challenge_common_09",
+    "name": "Common Challenge 9",
+    "tier": "Common",
+    "requirements": {
+      "Science": 7
+    },
+    "total_points": 7,
+    "victory_points": 1,
+    "description": "Requires 7 Science"
+  },
+  {
+    "id": "challenge_common_10",
+    "name": "Common Challenge 10",
+    "tier": "Common",
+    "requirements": {
+      "Science": 7
+    },
+    "total_points": 7,
+    "victory_points": 1,
+    "description": "Requires 7 Science"
+  },
+  {
+    "id": "challenge_common_11",
+    "name": "Common Challenge 11",
+    "tier": "Common",
+    "requirements": {
+      "Engineering": 4,
+      "Science": 2
+    },
+    "total_points": 6,
+    "victory_points": 1,
+    "description": "Requires 4 Engineering + 2 Science"
+  },
+  {
+    "id": "challenge_common_12",
+    "name": "Common Challenge 12",
+    "tier": "Common",
+    "requirements": {
+      "Combat": 6
+    },
+    "total_points": 6,
+    "victory_points": 1,
+    "description": "Requires 6 Combat"
+  },
+  {
+    "id": "challenge_common_13",
+    "name": "Common Challenge 13",
+    "tier": "Common",
+    "requirements": {
+      "Diplomacy": 5
+    },
+    "total_points": 5,
+    "victory_points": 1,
+    "description": "Requires 5 Diplomacy"
+  },
+  {
+    "id": "challenge_common_14",
+    "name": "Common Challenge 14",
+    "tier": "Common",
+    "requirements": {
+      "Science": 6
+    },
+    "total_points": 6,
+    "victory_points": 1,
+    "description": "Requires 6 Science"
+  },
+  {
+    "id": "challenge_common_15",
+    "name": "Common Challenge 15",
+    "tier": "Common",
+    "requirements": {
+      "Diplomacy": 5,
+      "Engineering": 2
+    },
+    "total_points": 7,
+    "victory_points": 1,
+    "description": "Requires 5 Diplomacy + 2 Engineering"
+  },
+  {
+    "id": "challenge_common_16",
+    "name": "Common Challenge 16",
+    "tier": "Common",
+    "requirements": {
+      "Combat": 5
+    },
+    "total_points": 5,
+    "victory_points": 1,
+    "description": "Requires 5 Combat"
+  },
+  {
+    "id": "challenge_common_17",
+    "name": "Common Challenge 17",
+    "tier": "Common",
+    "requirements": {
+      "Engineering": 5
+    },
+    "total_points": 5,
+    "victory_points": 1,
+    "description": "Requires 5 Engineering"
+  },
+  {
+    "id": "challenge_common_18",
+    "name": "Common Challenge 18",
+    "tier": "Common",
+    "requirements": {
+      "Medicine": 6
+    },
+    "total_points": 6,
+    "victory_points": 1,
+    "description": "Requires 6 Medicine"
+  },
+  {
+    "id": "challenge_common_19",
+    "name": "Common Challenge 19",
+    "tier": "Common",
+    "requirements": {
+      "Medicine": 7
+    },
+    "total_points": 7,
+    "victory_points": 1,
+    "description": "Requires 7 Medicine"
+  },
+  {
+    "id": "challenge_common_20",
+    "name": "Common Challenge 20",
+    "tier": "Common",
+    "requirements": {
+      "Diplomacy": 2,
+      "Combat": 3
+    },
+    "total_points": 5,
+    "victory_points": 1,
+    "description": "Requires 2 Diplomacy + 3 Combat"
+  },
+  {
+    "id": "challenge_elite_01",
+    "name": "Elite Challenge 1",
+    "tier": "Elite",
+    "requirements": {
+      "Engineering": 5,
+      "Science": 5
+    },
+    "total_points": 10,
+    "victory_points": 2,
+    "description": "Requires 5 Engineering + 5 Science"
+  },
+  {
+    "id": "challenge_elite_02",
+    "name": "Elite Challenge 2",
+    "tier": "Elite",
+    "requirements": {
+      "Combat": 9
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 9 Combat"
+  },
+  {
+    "id": "challenge_elite_03",
+    "name": "Elite Challenge 3",
+    "tier": "Elite",
+    "requirements": {
+      "Engineering": 9
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 9 Engineering"
+  },
+  {
+    "id": "challenge_elite_04",
+    "name": "Elite Challenge 4",
+    "tier": "Elite",
+    "requirements": {
+      "Medicine": 4,
+      "Science": 5
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 4 Medicine + 5 Science"
+  },
+  {
+    "id": "challenge_elite_05",
+    "name": "Elite Challenge 5",
+    "tier": "Elite",
+    "requirements": {
+      "Combat": 9
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 9 Combat"
+  },
+  {
+    "id": "challenge_elite_06",
+    "name": "Elite Challenge 6",
+    "tier": "Elite",
+    "requirements": {
+      "Science": 11
+    },
+    "total_points": 11,
+    "victory_points": 2,
+    "description": "Requires 11 Science"
+  },
+  {
+    "id": "challenge_elite_07",
+    "name": "Elite Challenge 7",
+    "tier": "Elite",
+    "requirements": {
+      "Diplomacy": 3,
+      "Medicine": 5,
+      "Combat": 2
+    },
+    "total_points": 10,
+    "victory_points": 2,
+    "description": "Requires 3 Diplomacy + 5 Medicine + 2 Combat"
+  },
+  {
+    "id": "challenge_elite_08",
+    "name": "Elite Challenge 8",
+    "tier": "Elite",
+    "requirements": {
+      "Science": 4,
+      "Engineering": 6
+    },
+    "total_points": 10,
+    "victory_points": 2,
+    "description": "Requires 4 Science + 6 Engineering"
+  },
+  {
+    "id": "challenge_elite_09",
+    "name": "Elite Challenge 9",
+    "tier": "Elite",
+    "requirements": {
+      "Medicine": 5,
+      "Combat": 5
+    },
+    "total_points": 10,
+    "victory_points": 2,
+    "description": "Requires 5 Medicine + 5 Combat"
+  },
+  {
+    "id": "challenge_elite_10",
+    "name": "Elite Challenge 10",
+    "tier": "Elite",
+    "requirements": {
+      "Medicine": 4,
+      "Diplomacy": 5
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 4 Medicine + 5 Diplomacy"
+  },
+  {
+    "id": "challenge_elite_11",
+    "name": "Elite Challenge 11",
+    "tier": "Elite",
+    "requirements": {
+      "Engineering": 9
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 9 Engineering"
+  },
+  {
+    "id": "challenge_elite_12",
+    "name": "Elite Challenge 12",
+    "tier": "Elite",
+    "requirements": {
+      "Engineering": 3,
+      "Medicine": 6
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 3 Engineering + 6 Medicine"
+  },
+  {
+    "id": "challenge_elite_13",
+    "name": "Elite Challenge 13",
+    "tier": "Elite",
+    "requirements": {
+      "Medicine": 2,
+      "Diplomacy": 2,
+      "Science": 5
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 2 Medicine + 2 Diplomacy + 5 Science"
+  },
+  {
+    "id": "challenge_elite_14",
+    "name": "Elite Challenge 14",
+    "tier": "Elite",
+    "requirements": {
+      "Diplomacy": 11
+    },
+    "total_points": 11,
+    "victory_points": 2,
+    "description": "Requires 11 Diplomacy"
+  },
+  {
+    "id": "challenge_elite_15",
+    "name": "Elite Challenge 15",
+    "tier": "Elite",
+    "requirements": {
+      "Engineering": 10
+    },
+    "total_points": 10,
+    "victory_points": 2,
+    "description": "Requires 10 Engineering"
+  },
+  {
+    "id": "challenge_elite_16",
+    "name": "Elite Challenge 16",
+    "tier": "Elite",
+    "requirements": {
+      "Science": 5,
+      "Diplomacy": 4
+    },
+    "total_points": 9,
+    "victory_points": 2,
+    "description": "Requires 5 Science + 4 Diplomacy"
+  },
+  {
+    "id": "challenge_elite_17",
+    "name": "Elite Challenge 17",
+    "tier": "Elite",
+    "requirements": {
+      "Medicine": 3,
+      "Combat": 8
+    },
+    "total_points": 11,
+    "victory_points": 2,
+    "description": "Requires 3 Medicine + 8 Combat"
+  },
+  {
+    "id": "challenge_elite_18",
+    "name": "Elite Challenge 18",
+    "tier": "Elite",
+    "requirements": {
+      "Medicine": 6,
+      "Engineering": 5
+    },
+    "total_points": 11,
+    "victory_points": 2,
+    "description": "Requires 6 Medicine + 5 Engineering"
+  },
+  {
+    "id": "challenge_elite_19",
+    "name": "Elite Challenge 19",
+    "tier": "Elite",
+    "requirements": {
+      "Medicine": 4,
+      "Combat": 6
+    },
+    "total_points": 10,
+    "victory_points": 2,
+    "description": "Requires 4 Medicine + 6 Combat"
+  },
+  {
+    "id": "challenge_elite_20",
+    "name": "Elite Challenge 20",
+    "tier": "Elite",
+    "requirements": {
+      "Diplomacy": 2,
+      "Medicine": 4,
+      "Science": 4
+    },
+    "total_points": 10,
+    "victory_points": 2,
+    "description": "Requires 2 Diplomacy + 4 Medicine + 4 Science"
+  },
+  {
+    "id": "challenge_heroic_01",
+    "name": "Heroic Challenge 1",
+    "tier": "Heroic",
+    "requirements": {
+      "Diplomacy": 8,
+      "Combat": 5
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 8 Diplomacy + 5 Combat"
+  },
+  {
+    "id": "challenge_heroic_02",
+    "name": "Heroic Challenge 2",
+    "tier": "Heroic",
+    "requirements": {
+      "Diplomacy": 6,
+      "Combat": 7
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 6 Diplomacy + 7 Combat"
+  },
+  {
+    "id": "challenge_heroic_03",
+    "name": "Heroic Challenge 3",
+    "tier": "Heroic",
+    "requirements": {
+      "Combat": 6,
+      "Medicine": 4,
+      "Science": 4
+    },
+    "total_points": 14,
+    "victory_points": 3,
+    "description": "Requires 6 Combat + 4 Medicine + 4 Science"
+  },
+  {
+    "id": "challenge_heroic_04",
+    "name": "Heroic Challenge 4",
+    "tier": "Heroic",
+    "requirements": {
+      "Engineering": 7,
+      "Diplomacy": 3,
+      "Combat": 3
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 7 Engineering + 3 Diplomacy + 3 Combat"
+  },
+  {
+    "id": "challenge_heroic_05",
+    "name": "Heroic Challenge 5",
+    "tier": "Heroic",
+    "requirements": {
+      "Combat": 8,
+      "Diplomacy": 5
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 8 Combat + 5 Diplomacy"
+  },
+  {
+    "id": "challenge_heroic_06",
+    "name": "Heroic Challenge 6",
+    "tier": "Heroic",
+    "requirements": {
+      "Engineering": 5,
+      "Combat": 3,
+      "Science": 5
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 5 Engineering + 3 Combat + 5 Science"
+  },
+  {
+    "id": "challenge_heroic_07",
+    "name": "Heroic Challenge 7",
+    "tier": "Heroic",
+    "requirements": {
+      "Science": 5,
+      "Medicine": 6,
+      "Engineering": 4
+    },
+    "total_points": 15,
+    "victory_points": 3,
+    "description": "Requires 5 Science + 6 Medicine + 4 Engineering"
+  },
+  {
+    "id": "challenge_heroic_08",
+    "name": "Heroic Challenge 8",
+    "tier": "Heroic",
+    "requirements": {
+      "Science": 8,
+      "Engineering": 4,
+      "Combat": 3
+    },
+    "total_points": 15,
+    "victory_points": 3,
+    "description": "Requires 8 Science + 4 Engineering + 3 Combat"
+  },
+  {
+    "id": "challenge_heroic_09",
+    "name": "Heroic Challenge 9",
+    "tier": "Heroic",
+    "requirements": {
+      "Combat": 7,
+      "Engineering": 6
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 7 Combat + 6 Engineering"
+  },
+  {
+    "id": "challenge_heroic_10",
+    "name": "Heroic Challenge 10",
+    "tier": "Heroic",
+    "requirements": {
+      "Medicine": 9,
+      "Diplomacy": 5
+    },
+    "total_points": 14,
+    "victory_points": 3,
+    "description": "Requires 9 Medicine + 5 Diplomacy"
+  },
+  {
+    "id": "challenge_heroic_11",
+    "name": "Heroic Challenge 11",
+    "tier": "Heroic",
+    "requirements": {
+      "Science": 8,
+      "Diplomacy": 5
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 8 Science + 5 Diplomacy"
+  },
+  {
+    "id": "challenge_heroic_12",
+    "name": "Heroic Challenge 12",
+    "tier": "Heroic",
+    "requirements": {
+      "Diplomacy": 6,
+      "Science": 3,
+      "Engineering": 4
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 6 Diplomacy + 3 Science + 4 Engineering"
+  },
+  {
+    "id": "challenge_heroic_13",
+    "name": "Heroic Challenge 13",
+    "tier": "Heroic",
+    "requirements": {
+      "Medicine": 6,
+      "Diplomacy": 3,
+      "Engineering": 4
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 6 Medicine + 3 Diplomacy + 4 Engineering"
+  },
+  {
+    "id": "challenge_heroic_14",
+    "name": "Heroic Challenge 14",
+    "tier": "Heroic",
+    "requirements": {
+      "Medicine": 7,
+      "Engineering": 3,
+      "Combat": 4
+    },
+    "total_points": 14,
+    "victory_points": 3,
+    "description": "Requires 7 Medicine + 3 Engineering + 4 Combat"
+  },
+  {
+    "id": "challenge_heroic_15",
+    "name": "Heroic Challenge 15",
+    "tier": "Heroic",
+    "requirements": {
+      "Science": 9,
+      "Engineering": 5
+    },
+    "total_points": 14,
+    "victory_points": 3,
+    "description": "Requires 9 Science + 5 Engineering"
+  },
+  {
+    "id": "challenge_heroic_16",
+    "name": "Heroic Challenge 16",
+    "tier": "Heroic",
+    "requirements": {
+      "Combat": 3,
+      "Science": 6,
+      "Medicine": 5
+    },
+    "total_points": 14,
+    "victory_points": 3,
+    "description": "Requires 3 Combat + 6 Science + 5 Medicine"
+  },
+  {
+    "id": "challenge_heroic_17",
+    "name": "Heroic Challenge 17",
+    "tier": "Heroic",
+    "requirements": {
+      "Combat": 8,
+      "Diplomacy": 3,
+      "Medicine": 4
+    },
+    "total_points": 15,
+    "victory_points": 3,
+    "description": "Requires 8 Combat + 3 Diplomacy + 4 Medicine"
+  },
+  {
+    "id": "challenge_heroic_18",
+    "name": "Heroic Challenge 18",
+    "tier": "Heroic",
+    "requirements": {
+      "Engineering": 7,
+      "Combat": 6
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 7 Engineering + 6 Combat"
+  },
+  {
+    "id": "challenge_heroic_19",
+    "name": "Heroic Challenge 19",
+    "tier": "Heroic",
+    "requirements": {
+      "Science": 6,
+      "Combat": 4,
+      "Medicine": 3
+    },
+    "total_points": 13,
+    "victory_points": 3,
+    "description": "Requires 6 Science + 4 Combat + 3 Medicine"
+  },
+  {
+    "id": "challenge_heroic_20",
+    "name": "Heroic Challenge 20",
+    "tier": "Heroic",
+    "requirements": {
+      "Engineering": 8,
+      "Medicine": 4,
+      "Diplomacy": 3
+    },
+    "total_points": 15,
+    "victory_points": 3,
+    "description": "Requires 8 Engineering + 4 Medicine + 3 Diplomacy"
+  }
+]

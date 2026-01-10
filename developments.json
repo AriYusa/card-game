@@ -1,0 +1,832 @@
+[
+  {
+    "id": "dev_single_01",
+    "name": "Combat Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_02",
+    "name": "Combat Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_03",
+    "name": "Combat Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_04",
+    "name": "Combat Boost 4",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_05",
+    "name": "Combat Boost 5",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_06",
+    "name": "Combat Boost 6",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_07",
+    "name": "Combat Boost 7",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_08",
+    "name": "Combat Boost 8",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_09",
+    "name": "Combat Boost 9",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_10",
+    "name": "Combat Boost 10",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 2
+    },
+    "description": "Add +2 to Combat"
+  },
+  {
+    "id": "dev_single_11",
+    "name": "Diplomacy Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_12",
+    "name": "Diplomacy Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_13",
+    "name": "Diplomacy Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_14",
+    "name": "Diplomacy Boost 4",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_15",
+    "name": "Diplomacy Boost 5",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_16",
+    "name": "Diplomacy Boost 6",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_17",
+    "name": "Diplomacy Boost 7",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_18",
+    "name": "Diplomacy Boost 8",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_19",
+    "name": "Diplomacy Boost 9",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_20",
+    "name": "Diplomacy Boost 10",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 2
+    },
+    "description": "Add +2 to Diplomacy"
+  },
+  {
+    "id": "dev_single_21",
+    "name": "Science Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_22",
+    "name": "Science Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_23",
+    "name": "Science Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_24",
+    "name": "Science Boost 4",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_25",
+    "name": "Science Boost 5",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_26",
+    "name": "Science Boost 6",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_27",
+    "name": "Science Boost 7",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_28",
+    "name": "Science Boost 8",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_29",
+    "name": "Science Boost 9",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_30",
+    "name": "Science Boost 10",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 2
+    },
+    "description": "Add +2 to Science"
+  },
+  {
+    "id": "dev_single_31",
+    "name": "Engineering Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_32",
+    "name": "Engineering Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_33",
+    "name": "Engineering Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_34",
+    "name": "Engineering Boost 4",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_35",
+    "name": "Engineering Boost 5",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_36",
+    "name": "Engineering Boost 6",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_37",
+    "name": "Engineering Boost 7",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_38",
+    "name": "Engineering Boost 8",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_39",
+    "name": "Engineering Boost 9",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_40",
+    "name": "Engineering Boost 10",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 2
+    },
+    "description": "Add +2 to Engineering"
+  },
+  {
+    "id": "dev_single_41",
+    "name": "Medicine Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_42",
+    "name": "Medicine Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_43",
+    "name": "Medicine Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_44",
+    "name": "Medicine Boost 4",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_45",
+    "name": "Medicine Boost 5",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_46",
+    "name": "Medicine Boost 6",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_47",
+    "name": "Medicine Boost 7",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_48",
+    "name": "Medicine Boost 8",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_49",
+    "name": "Medicine Boost 9",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_single_50",
+    "name": "Medicine Boost 10",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Medicine": 2
+    },
+    "description": "Add +2 to Medicine"
+  },
+  {
+    "id": "dev_dual_01",
+    "name": "Combat/Diplomacy Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Diplomacy": 1
+    },
+    "description": "Add +1 to Combat and +1 to Diplomacy"
+  },
+  {
+    "id": "dev_dual_02",
+    "name": "Combat/Diplomacy Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Diplomacy": 1
+    },
+    "description": "Add +1 to Combat and +1 to Diplomacy"
+  },
+  {
+    "id": "dev_dual_03",
+    "name": "Combat/Diplomacy Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Diplomacy": 1
+    },
+    "description": "Add +1 to Combat and +1 to Diplomacy"
+  },
+  {
+    "id": "dev_dual_04",
+    "name": "Combat/Science Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Science": 1
+    },
+    "description": "Add +1 to Combat and +1 to Science"
+  },
+  {
+    "id": "dev_dual_05",
+    "name": "Combat/Science Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Science": 1
+    },
+    "description": "Add +1 to Combat and +1 to Science"
+  },
+  {
+    "id": "dev_dual_06",
+    "name": "Combat/Science Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Science": 1
+    },
+    "description": "Add +1 to Combat and +1 to Science"
+  },
+  {
+    "id": "dev_dual_07",
+    "name": "Combat/Engineering Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Combat and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_08",
+    "name": "Combat/Engineering Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Combat and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_09",
+    "name": "Combat/Engineering Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Combat and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_10",
+    "name": "Combat/Medicine Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Combat and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_11",
+    "name": "Combat/Medicine Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Combat and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_12",
+    "name": "Combat/Medicine Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Combat": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Combat and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_13",
+    "name": "Diplomacy/Science Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Science": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Science"
+  },
+  {
+    "id": "dev_dual_14",
+    "name": "Diplomacy/Science Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Science": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Science"
+  },
+  {
+    "id": "dev_dual_15",
+    "name": "Diplomacy/Science Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Science": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Science"
+  },
+  {
+    "id": "dev_dual_16",
+    "name": "Diplomacy/Engineering Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_17",
+    "name": "Diplomacy/Engineering Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_18",
+    "name": "Diplomacy/Engineering Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_19",
+    "name": "Diplomacy/Medicine Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_20",
+    "name": "Diplomacy/Medicine Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_21",
+    "name": "Diplomacy/Medicine Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Diplomacy": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Diplomacy and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_22",
+    "name": "Science/Engineering Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Science and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_23",
+    "name": "Science/Engineering Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Science and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_24",
+    "name": "Science/Engineering Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 1,
+      "Engineering": 1
+    },
+    "description": "Add +1 to Science and +1 to Engineering"
+  },
+  {
+    "id": "dev_dual_25",
+    "name": "Science/Medicine Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Science and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_26",
+    "name": "Science/Medicine Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Science and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_27",
+    "name": "Science/Medicine Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Science": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Science and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_28",
+    "name": "Engineering/Medicine Boost 1",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Engineering and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_29",
+    "name": "Engineering/Medicine Boost 2",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Engineering and +1 to Medicine"
+  },
+  {
+    "id": "dev_dual_30",
+    "name": "Engineering/Medicine Boost 3",
+    "type": "Permanent Perk Boost",
+    "boost": {
+      "Engineering": 1,
+      "Medicine": 1
+    },
+    "description": "Add +1 to Engineering and +1 to Medicine"
+  },
+  {
+    "id": "dev_special_01",
+    "name": "Negotiator",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "You may trade Victory Points at 2:1 ratio this round",
+    "effect": "favorable_vp_trade"
+  },
+  {
+    "id": "dev_special_02",
+    "name": "Theft",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Steal one development card from another player",
+    "effect": "steal_dev_card"
+  },
+  {
+    "id": "dev_special_03",
+    "name": "Resource Sharing",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Helpers don't suffer debuff if challenge succeeds",
+    "effect": "no_helper_debuff"
+  },
+  {
+    "id": "dev_special_04",
+    "name": "Emergency Training",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Add +3 to any one perk for one challenge",
+    "effect": "temp_boost_3"
+  },
+  {
+    "id": "dev_special_05",
+    "name": "Alliance",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Draw 2 additional development cards",
+    "effect": "draw_2_cards"
+  },
+  {
+    "id": "dev_special_06",
+    "name": "Resilience",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Character cannot be exhausted this round",
+    "effect": "prevent_exhaustion"
+  },
+  {
+    "id": "dev_special_07",
+    "name": "Quick Recovery",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Refresh one exhausted character immediately",
+    "effect": "refresh_exhausted"
+  },
+  {
+    "id": "dev_special_08",
+    "name": "Inspiration",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "All your characters get +1 to all perks this round",
+    "effect": "boost_all_perks_1"
+  },
+  {
+    "id": "dev_special_09",
+    "name": "Minor Sabotage",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Reduce another player's character perk by 1",
+    "effect": "reduce_perk_1"
+  },
+  {
+    "id": "dev_special_10",
+    "name": "Strategic Planning",
+    "type": "One-time Special Ability",
+    "boost": {},
+    "description": "Look at top 3 challenge cards and choose one",
+    "effect": "choose_challenge"
+  }
+]

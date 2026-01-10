@@ -1,0 +1,103 @@
+{
+  "characters": {
+    "total": 30,
+    "avg_points": 5.0,
+    "min_points": 5,
+    "max_points": 5,
+    "perk_distribution": {
+      "Combat": {
+        "0": 7,
+        "1": 16,
+        "2": 5,
+        "3": 2,
+        "4": 0,
+        "5": 0
+      },
+      "Diplomacy": {
+        "0": 11,
+        "1": 10,
+        "2": 7,
+        "3": 2,
+        "4": 0,
+        "5": 0
+      },
+      "Science": {
+        "0": 12,
+        "1": 10,
+        "2": 8,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "Engineering": {
+        "0": 9,
+        "1": 15,
+        "2": 5,
+        "3": 0,
+        "4": 1,
+        "5": 0
+      },
+      "Medicine": {
+        "0": 10,
+        "1": 10,
+        "2": 8,
+        "3": 1,
+        "4": 1,
+        "5": 0
+      }
+    },
+    "perk_totals": {
+      "Combat": 32,
+      "Diplomacy": 30,
+      "Science": 26,
+      "Engineering": 29,
+      "Medicine": 33
+    }
+  },
+  "developments": {
+    "total": 90,
+    "single_perk": 50,
+    "dual_perk": 30,
+    "special": 10,
+    "avg_boost": 1.78
+  },
+  "challenges": {
+    "total": 60,
+    "common": 20,
+    "elite": 20,
+    "heroic": 20,
+    "requirements_by_tier": {
+      "Common": {
+        "Combat": 25,
+        "Diplomacy": 26,
+        "Science": 22,
+        "Engineering": 17,
+        "Medicine": 31
+      },
+      "Elite": {
+        "Combat": 39,
+        "Diplomacy": 27,
+        "Science": 39,
+        "Engineering": 47,
+        "Medicine": 43
+      },
+      "Heroic": {
+        "Combat": 67,
+        "Diplomacy": 47,
+        "Science": 54,
+        "Engineering": 57,
+        "Medicine": 48
+      },
+      "Final Crisis": {
+        "Combat": 291,
+        "Diplomacy": 241,
+        "Science": 261,
+        "Engineering": 261,
+        "Medicine": 246
+      }
+    }
+  },
+  "final_crisis": {
+    "total": 10
+  }
+}
