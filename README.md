@@ -1,1 +1,1 @@
-# card-game
+manim -pql act1.py Act1SettingTheStage

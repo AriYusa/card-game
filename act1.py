@@ -123,6 +123,7 @@ class Act1SettingTheStage(Scene):
         )
         self.play(
             GrowArrow(p_arr), FadeIn(q1_lbl),
+            FadeIn(usr_box), FadeIn(usr_lbl),
             run_time=0.5,
         )
         self.wait(1)
@@ -132,12 +133,6 @@ class Act1SettingTheStage(Scene):
             q1_lbl.animate.set_color(GREEN_C),
             run_time=0.5,
         )
-        self.wait(0.3)
-
-        # LLM box outline pulses red then returns to default
-        self.play(FadeIn(usr_box), FadeIn(usr_lbl), run_time=0.6)
-        self.wait(0.5)
-
         self.play(llm_box.animate.set_stroke(color=RED_C, width=3.5), run_time=0.4)
         self.wait(2)
         self.play(llm_box.animate.set_stroke(color=BLUE, width=2.5), run_time=0.4)
@@ -224,12 +219,15 @@ class Act1SettingTheStage(Scene):
         self.wait(5.0)
 
         # make llm box red to indicate it's "thinking" about the new prompt + history
-        self.play(llm_box.animate.set_stroke(color=RED_C, width=3.5), run_time=0.4)
+        self.play(
+            p_arr1.animate.set_color(GREEN_C),
+            q2_lbl.animate.set_color(GREEN_C),
+            llm_box.animate.set_stroke(color=RED_C, width=3.5), run_time=0.4)
         self.wait(2.0)
 
         # Response arrow → red + response2_text, then returns to default
         r_arr2 = Arrow(
-            llm_box.get_left() + DOWN * 0.6, user.get_right() + DOWN * 0.6,
+            llm_box.get_left() + DOWN * 0.6, user.get_right() + DOWN * 0.1,
             color=RED_B, buff=0.05, stroke_width=3,
         )
         r2_lbl = Text(response2_text, font_size=13, color=RED_B).next_to(r_arr2, DOWN, buff=0.1)
@@ -274,7 +272,7 @@ class Act1SettingTheStage(Scene):
         if not is_continuation:
             user = self.make_user_icon().move_to(LEFT * 5.5)
             llm_box = RoundedRectangle(
-                corner_radius=0.2, width=3.0, height=3.2,
+                corner_radius=0.2, width=3.0, height=4,
                 color=BLUE, fill_color=DARK_GREY, fill_opacity=0.4, stroke_width=2.5,
             ).move_to(LEFT * 0.5)
             llm_label = Text("LLM", font_size=24, color=BLUE, weight=BOLD).next_to(
@@ -282,7 +280,7 @@ class Act1SettingTheStage(Scene):
             )
 
         tools_box = RoundedRectangle(
-            corner_radius=0.2, width=3.0, height=3.2,
+            corner_radius=0.2, width=3.0, height=4,
             color=ORANGE, fill_color=DARK_GREY, fill_opacity=0.4, stroke_width=2.5,
         ).move_to(RIGHT * 4.0)
         tools_header = Text("⚙  Tools", font_size=20, color=ORANGE, weight=BOLD).next_to(
@@ -297,7 +295,7 @@ class Act1SettingTheStage(Scene):
         
         # agent box - rectangle that includes both the LLM and the tools, to show they're part of the same agent
         agent_box = RoundedRectangle(
-            corner_radius=0.3, width=8.0, height=4.0,
+            corner_radius=0.3, width=8.0, height=4.8,
             color=GREY_B, fill_color=GREY_B, fill_opacity=0.1, stroke_width=2,
         ).move_to(RIGHT * 1.75)
         agent_lbl = Text("Agent", font_size=22, color=GREY_B, weight=BOLD).next_to(
@@ -357,14 +355,56 @@ class Act1SettingTheStage(Scene):
         self.play(GrowArrow(prompt_arr), FadeIn(prompt_lbl), run_time=0.6)
         self.wait(0.4)
 
-        # LLM → tools (tool call)
-        tool_call_arr = Arrow(
-            llm_box.get_right(), tools_box.get_left(),
-            color=RED_C, buff=0.1, stroke_width=2.5,
-        )
-        tool_call_lbl = Text("Tool Call", font_size=13, color=RED_C).next_to(tool_call_arr, UP, buff=0.08)
-        self.play(GrowArrow(tool_call_arr), FadeIn(tool_call_lbl), run_time=0.7)
-        self.wait(0.5)
+        def 
+
+        selected_box = RoundedRectangle(
+            corner_radius=0.08, width=2.4, height=0.7,
+            fill_color="#2b2244", fill_opacity=1, stroke_color=PURPLE_C, stroke_width=1.5,
+        ).move_to(c + DOWN * 0.75)
+        selected_lbl = Text(
+            "Selected tool\nand arguments", font_size=11, color=PURPLE_C, weight=BOLD
+        ).move_to(selected_box)
+
+        result_box = RoundedRectangle(
+            corner_radius=0.08, width=2.4, height=0.42,
+            fill_color="#5D2647", fill_opacity=1, stroke_color=GREEN_C, stroke_width=1.5,
+        ).move_to(c + DOWN * 1.25)
+        result_lbl = Text("Tool Result", font_size=11, color=GREEN_C, weight=BOLD).move_to(result_box)
+        result_dots = VGroup(
+            Dot(radius=0.045, color=GREY_B),
+            Dot(radius=0.045, color=GREY_B),
+            Dot(radius=0.045, color=GREY_B),
+        ).arrange(RIGHT, buff=0.12).next_to(result_box, DOWN, buff=0.12)
+
+        def tool_cycle(i):
+            tool_call_arr = Arrow(
+                selected_box.get_right()+UP * 0.05, tools_box.get_left(),
+                color=RED_C, buff=0.08, stroke_width=2.5,
+            )
+            tool_call_lbl = Text("Tool Call", font_size=13, color=RED_C).next_to(tool_call_arr, UP, buff=0.08)
+            tool_result_arr = Arrow(
+                tools_box.get_left()+DOWN * 0.05, result_box.get_right(),
+                color=GREEN_C, buff=0.08, stroke_width=2.5,
+            ).shift(DOWN * 0.05)
+            tool_result_lbl = Text("Result", font_size=13, color=GREEN_C).next_to(tool_result_arr, DOWN, buff=0.08)
+            selected_box =
+            self.play(FadeIn(selected_box), FadeIn(selected_lbl), run_time=0.5)
+            self.play(GrowArrow(tool_call_arr), FadeIn(tool_call_lbl), run_time=0.5)
+            self.play(FadeIn(result_box), FadeIn(result_lbl), run_time=0.35)
+            self.play(GrowArrow(tool_result_arr), FadeIn(tool_result_lbl), run_time=0.5)
+            self.wait(0.25)
+            self.play(
+                FadeOut(tool_call_arr), FadeOut(tool_call_lbl),
+                FadeOut(tool_result_arr), FadeOut(tool_result_lbl),
+                # FadeOut(result_box), FadeOut(result_lbl), FadeOut(result_dots),
+                run_time=0.35,
+            )
+
+        tool_cycle(1)
+        tool_cycle(2)
+        self.play(FadeIn(result_dots), run_time=0.3)
+        self.play(FadeIn(result_box), FadeIn(result_lbl), FadeIn(result_dots), run_time=0.4)
+        self.wait(0.4)
 
         # Tools → LLM (result)
         cap4 = self.make_caption("Tool result returns to LLM, which responds to the user")
@@ -374,8 +414,8 @@ class Act1SettingTheStage(Scene):
             tools_box.get_left(), llm_box.get_right(),
             color=GREEN_C, buff=0.1, stroke_width=2.5,
         ).shift(DOWN * 0.45)
-        result_lbl = Text("Tool Result", font_size=13, color=GREEN_C).next_to(result_arr, DOWN, buff=0.08)
-        self.play(GrowArrow(result_arr), FadeIn(result_lbl), run_time=0.7)
+        result_flow_lbl = Text("Tool Result", font_size=13, color=GREEN_C).next_to(result_arr, DOWN, buff=0.08)
+        self.play(GrowArrow(result_arr), FadeIn(result_flow_lbl), run_time=0.7)
         self.wait(0.4)
 
         # LLM → user (final response)
@@ -394,8 +434,9 @@ class Act1SettingTheStage(Scene):
                 sys_bar, sys_lbl, tool_bar, tool_bar_lbl, usr_bar, usr_lbl,
                 inject_line,
                 prompt_arr, prompt_lbl,
-                tool_call_arr, tool_call_lbl,
-                result_arr, result_lbl,
+                selected_box, selected_lbl,
+                result_box, result_lbl, result_dots,
+                result_arr, result_flow_lbl,
                 resp_arr, resp_lbl, cap4,
             )),
             run_time=1.0,
@@ -452,3 +493,4 @@ class Act1SettingTheStage(Scene):
 
 # to do 1.2
 # add boxes to llm: "Selected tool and arguments", then arrow to tools, arrow from tools, added box "Tool Result", add 3 dots under the box, and redrew a few times arroeto tolls and back (showing tools can be called sever times untill llm decides to respond to user)
+make new blocsl uppdear at the bottom
