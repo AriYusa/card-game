@@ -340,37 +340,6 @@ class Act2SubagentsAsTools(Scene):
     # ─── Scene 2.6 — "Team of strangers" summary visual ───────────────────────
 
     def scene_2_6(self):
-        cap = self.make_caption(
-            "Think of it like hiring a freelancer for one task. They do the job, deliver the result, and leave."
-        )
-        self.play(FadeIn(cap))
-
-        # Revolving door: figures walk in, do one job, walk out
-        for color, name in [
-            (PURPLE, "Social Expert"),
-            (ORANGE, "Mathematician"),
-            (PURPLE, "Social Expert"),
-        ]:
-            fig = RoundedRectangle(
-                corner_radius=0.18, width=2.0, height=1.4,
-                color=color, fill_color=color, fill_opacity=0.2, stroke_width=2,
-            ).move_to(RIGHT * 6 + UP * 0.8)
-            lbl = Text(name, font_size=13, color=color, weight=BOLD).next_to(fig, UP, buff=0.1)
-            grp = VGroup(fig, lbl)
-
-            self.play(grp.animate.move_to(UP * 0.8), run_time=0.6, rate_func=smooth)
-            self.wait(0.3)
-            done = Text("done  ✓", font_size=14, color=GREEN).next_to(fig, DOWN, buff=0.1)
-            self.play(FadeIn(done), run_time=0.3)
-            self.wait(0.3)
-            self.play(
-                grp.animate.move_to(LEFT * 6 + UP * 0.8),
-                FadeOut(done),
-                run_time=0.6,
-            )
-            self.play(FadeOut(grp), run_time=0.2)
-
-        self.wait(0.4)
 
         # Summary box
         summary_bg = RoundedRectangle(
