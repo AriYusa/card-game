@@ -1,5 +1,7 @@
 from manim import *
 
+from shared import make_agent_box, make_caption, make_context_bar, make_user_icon, swap_caption
+
 
 class Act1SettingTheStage(Scene):
     def construct(self):
@@ -9,64 +11,10 @@ class Act1SettingTheStage(Scene):
         self.wait(0.5)
         self.scene_1_3()
 
-    # ─── helpers ──────────────────────────────────────────────────────────────
-
-    def make_caption(self, text):
-        return Text(text, font_size=22, color=WHITE).to_edge(DOWN, buff=0.35)
-
-    def swap_caption(self, old, new):
-        self.play(ReplacementTransform(old, new), run_time=0.7)
-
-    def make_agent_box(self, name, color, width=2.8, height=2.45):
-        box = RoundedRectangle(
-            corner_radius=0.2,
-            width=width,
-            height=height,
-            color=color,
-            fill_color=color,
-            fill_opacity=0.15,
-            stroke_width=2.5,
-        )
-        label = Text(name, font_size=19, color=color, weight=BOLD).next_to(
-            box, UP, buff=0.15
-        )
-        sub_box_width = width/2 - 0.25
-        llm_bar = RoundedRectangle(
-            corner_radius=0.08,
-            width=sub_box_width,
-            height=0.5,
-            color=color,
-            fill_color=color,
-            fill_opacity=0.18,
-            stroke_width=1.5,
-        ).move_to(box.get_center() + LEFT * (sub_box_width/2 + 0.05))
-        llm_text = Text("LLM", font_size=12, color=color, weight=BOLD).move_to(llm_bar)
-        tools_bar = RoundedRectangle(
-            corner_radius=0.08,
-            width=sub_box_width,
-            height=0.5,
-            color=color,
-            fill_color=color,
-            fill_opacity=0.18,
-            stroke_width=1.5,
-        ).move_to(box.get_center() + RIGHT * (sub_box_width/2 + 0.05))
-        tools_text = Text("Tools", font_size=12, color=color, weight=BOLD).move_to(tools_bar)
-        return VGroup(box, label, llm_bar, llm_text, tools_bar, tools_text)
-
-    def make_user_icon(self, color=BLUE_C):
-        head = Circle(radius=0.25, color=color, fill_color=color, fill_opacity=0.9, stroke_width=2)
-        body = RoundedRectangle(
-            corner_radius=0.12, width=0.55, height=0.6,
-            color=color, fill_color=color, fill_opacity=0.9, stroke_width=2,
-        ).next_to(head, DOWN, buff=0.05)
-        icon = VGroup(head, body)
-        lbl = Text("User", font_size=16, color=color).next_to(icon, DOWN, buff=0.1)
-        return VGroup(icon, lbl)
-
     # ─── Scene 1.1 — Simplest LLM-based agent ────────────────────────────────
 
     def scene_1_1(self):
-        user = self.make_user_icon().move_to(LEFT * 4.8)
+        user = make_user_icon().move_to(LEFT * 4.8)
 
         llm_box = RoundedRectangle(
             corner_radius=0.2, width=3.2, height=2.4,
@@ -76,7 +24,7 @@ class Act1SettingTheStage(Scene):
             llm_box.get_top(), DOWN, buff=0.25
         )
 
-        cap1 = self.make_caption("The simplest agent: user sends a prompt, LLM responds")
+        cap1 = make_caption("The simplest agent: user sends a prompt, LLM responds")
         self.play(FadeIn(user), FadeIn(VGroup(llm_box, llm_label)), run_time=0.8)
         self.play(FadeIn(cap1))
         self.wait(0.8)
@@ -93,8 +41,8 @@ class Act1SettingTheStage(Scene):
         self.wait(1.0)
 
         # Zoom into LLM internals
-        cap2 = self.make_caption("Inside the LLM: system prompt + user prompt")
-        self.swap_caption(cap1, cap2)
+        cap2 = make_caption("Inside the LLM: system prompt + user prompt")
+        swap_caption(self, cap1, cap2)
 
         large_box = RoundedRectangle(
             corner_radius=0.2, width=5.8, height=4.8,
@@ -189,8 +137,8 @@ class Act1SettingTheStage(Scene):
         # User Prompt fades out first to make room
         self.play(FadeOut(usr_box), FadeOut(usr_lbl), run_time=0.5)
         
-        cap3 = self.make_caption("2nd turn: previous messages included as conversation history")
-        self.swap_caption(cap2, cap3)
+        cap3 = make_caption("2nd turn: previous messages included as conversation history")
+        swap_caption(self, cap2, cap3)
         
         # Conversation History appears where User Prompt was
         hist_box = RoundedRectangle(
@@ -323,7 +271,7 @@ class Act1SettingTheStage(Scene):
         )
         self.play(FadeIn(VGroup(agent_box, agent_lbl)), run_time=0.8)
 
-        cap1 = self.make_caption("An LLM agent can call tools to act on the world")
+        cap1 = make_caption("An LLM agent can call tools to act on the world")
         if not is_continuation:
             self.play(FadeIn(user), FadeIn(VGroup(llm_box, llm_label)), run_time=0.8)
         self.play(FadeIn(tools_grp), run_time=0.8)
@@ -331,8 +279,8 @@ class Act1SettingTheStage(Scene):
         self.wait(1.0)
 
         # Tool descriptions injected into LLM context
-        cap2 = self.make_caption("Tool descriptions are injected after the system prompt")
-        self.swap_caption(cap1, cap2)
+        cap2 = make_caption("Tool descriptions are injected after the system prompt")
+        swap_caption(self, cap1, cap2)
 
         c = llm_box.get_center()
         sys_bar = RoundedRectangle(
@@ -367,8 +315,8 @@ class Act1SettingTheStage(Scene):
         self.wait(1.0)
 
         # User → LLM
-        cap3 = self.make_caption("LLM selects a tool instead of responding directly")
-        self.swap_caption(cap2, cap3)
+        cap3 = make_caption("LLM selects a tool instead of responding directly")
+        swap_caption(self, cap2, cap3)
 
         prompt_arr = Arrow(user.get_right(), llm_box.get_left(), color=YELLOW, buff=0.1, stroke_width=2.5)
         prompt_lbl = Text("Prompt", font_size=13, color=YELLOW).next_to(prompt_arr, UP, buff=0.08)
@@ -420,8 +368,8 @@ class Act1SettingTheStage(Scene):
         self.wait(0.4)
 
         # Tools → LLM (result)
-        cap4 = self.make_caption("Tool result returns to LLM, which responds to the user")
-        self.swap_caption(cap3, cap4)
+        cap4 = make_caption("Tool result returns to LLM, which responds to the user")
+        swap_caption(self, cap3, cap4)
 
         result_arr = Arrow(
             tools_box.get_left(), llm_box.get_right(),
@@ -440,7 +388,7 @@ class Act1SettingTheStage(Scene):
         self.play(GrowArrow(resp_arr), FadeIn(resp_lbl), run_time=0.7)
         self.wait(2.0)
 
-        coordinator_agent = self.make_agent_box(
+        coordinator_agent = make_agent_box(
                 "Coordinator Agent", BLUE
             ).move_to(LEFT * 3.5)
 
@@ -472,10 +420,10 @@ class Act1SettingTheStage(Scene):
     # ─── Scene 1.3 — Introducing the cast ────────────────────────────────────
 
     def scene_1_3(self):
-        social = self.make_agent_box(
-            "Social Media\nExpert", PURPLE
+        social = make_agent_box(
+            "Social Media Agent", PURPLE
         ).move_to(RIGHT * 2.5 + UP * 1.5)
-        math = self.make_agent_box(
+        math = make_agent_box(
             "Mathematician", ORANGE
         ).move_to(RIGHT * 2.5 + DOWN * 1.5)
 
