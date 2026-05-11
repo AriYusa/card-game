@@ -58,66 +58,28 @@ Three acts, ~3-4 minutes total. Narration-style pacing. Each scene fades or tran
 
 ## ACT 2: Subagents as Tools (~80 seconds)
 
-### Scene 2.1 — Architecture overview
-- Full screen: Coordinator box (blue) on the left with 4 horizontal bars inside representing its context window
-- To the right, two groups of agents, each shown as **3 slightly offset identical figures** to suggest a pool/team:
-  - Top group: **"Social Media Experts"** (purple) with a small gear icon 🔧
-  - Bottom group: **"Mathematicians"** (orange) with a small gear icon 🔧
-- Arrows from Coordinator point to each group, labeled **"tool call"**
-- Caption: *"The Coordinator treats subagents like tools — like pressing a button to get a result"*
 
-### Scene 2.2 — Coordinator's context window zooms in
-- Zoom into the Coordinator's 4 bars, each fills with text:
-  - Bar 1: *"System prompt: you are a coordinator agent..."*
-  - Bar 2: *"User request: Research advertising strategies, estimate CR, calculate CAC and ROI..."*
-  - Bar 3: *"Tools available: ask_social_expert(...), ask_mathematician(...)"*
-  - Bar 4: *"Conversation so far: [empty]"*
-- Caption: *"The Coordinator sees the task and knows which tools it can call"*
+
+### Scene 2.1 — Coordinator's context window zooms in
+- Start from the exact way scene_1_3 ended
+- Coordinator box become bigger and the tools box also. Names of subagents appear in coordinators tool lost like call_social_expert(...), call_mathematician(...)"
 
 ### Scene 2.3 — First tool call: Social Media Expert
 - Coordinator generates a glowing green tool call bubble:
   `ask_social_expert("Research advertising strategies and estimate conversion rates for each")`
 - Bubble travels right toward the Social Media Expert group
-- One figure from the group steps forward and becomes active
-- A **fresh, empty** context window opens next to that figure and fills from scratch:
-  - *"System prompt: you are a social media expert..."*
-  - *"User turn: Research advertising strategies and estimate conversion rates for each"*
-  - Then nothing else — the window is small, clean, minimal
-- Caption: *"The subagent wakes up with no memory. It only sees this one question."*
-- Social Media Expert works, uses its own tools (search icon animates briefly)
+- Social Media Expert works (add like a loading sign near it), small arrows (if possible curmed abbed between Social Media Expert's "LLM" and "Tools" boxes)
 - Returns a result bubble: *"SEO: CR 3%, Paid Social: CR 5%, Email: CR 8%"*
-- Result travels back to Coordinator. The Social Media Expert figure **grays out and fades** — it's done, gone.
 
-### Scene 2.4 — Second tool call: Mathematician
+### Scene 2.4 — Second tool call: Mathematician (not so deteiled as Social Media Expert)
 - Coordinator's context window updates — bar 4 now shows the received result
 - Coordinator generates second tool call:
   `ask_mathematician("Calculate CAC and ROI for: SEO CR 3%, Paid Social CR 5%, Email CR 8%")`
-- Bubble travels to Mathematician group. A fresh figure steps forward.
-- **Fresh empty context window** appears again — same minimal animation as before:
-  - *"System prompt: you are a mathematician..."*
-  - *"User turn: Calculate CAC and ROI for SEO CR 3%..."*
-  - Nothing else
-- Caption: *"Again — a brand new instance. No knowledge of the Social Media Expert's process, only the result the Coordinator chose to pass."*
-- Mathematician calculates, returns structured results, then **fades away**
+- Bubble travels to Mathematician group
+- Loading sign for 2 secs
+- Mathematician returns structures result bubble (make some small mock)
 
-### Scene 2.5 — Coordinator assembles the answer
-- Zoom back out to Coordinator. Its context window is now full:
-  - Original task
-  - Tool call 1 + result
-  - Tool call 2 + result
-- Coordinator produces final answer → travels left back to user
-- Caption: *"The Coordinator holds all the memory. Subagents are stateless — each one forgets everything when it's done."*
 
-### Scene 2.6 — "Team of strangers" summary visual
-- Pull back further. Show the pool of Social Media Expert figures and Mathematician figures as a revolving door: figures walk in, do one job, walk out, are replaced by identical figures
-- Caption: *"Think of it like hiring a freelancer for one task. They do the job, deliver the result, and leave. Next time you hire someone fresh."*
-- Summary box fades in:
-  - ✅ Simple and predictable
-  - ✅ Easy to run calls in parallel
-  - ⚠️ Subagents cannot build on each other's work directly
-  - ⚠️ Coordinator must pass all relevant context manually in each tool call
-
----
 
 ## ACT 3: Handoff Strategy (~90 seconds)
 

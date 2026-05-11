@@ -17,7 +17,7 @@ class Act1SettingTheStage(Scene):
     def swap_caption(self, old, new):
         self.play(ReplacementTransform(old, new), run_time=0.7)
 
-    def make_agent_box(self, name, color, subtitle, width=2.8, height=2.2):
+    def make_agent_box(self, name, color, width=2.8, height=2.45):
         box = RoundedRectangle(
             corner_radius=0.2,
             width=width,
@@ -28,10 +28,30 @@ class Act1SettingTheStage(Scene):
             stroke_width=2.5,
         )
         label = Text(name, font_size=19, color=color, weight=BOLD).next_to(
-            box.get_top(), DOWN, buff=0.25
+            box, UP, buff=0.15
         )
-        sub = Text(subtitle, font_size=12, color=GREY_A).next_to(label, DOWN, buff=0.15)
-        return VGroup(box, label, sub)
+        sub_box_width = width/2 - 0.25
+        llm_bar = RoundedRectangle(
+            corner_radius=0.08,
+            width=sub_box_width,
+            height=0.5,
+            color=color,
+            fill_color=color,
+            fill_opacity=0.18,
+            stroke_width=1.5,
+        ).move_to(box.get_center() + LEFT * (sub_box_width/2 + 0.05))
+        llm_text = Text("LLM", font_size=12, color=color, weight=BOLD).move_to(llm_bar)
+        tools_bar = RoundedRectangle(
+            corner_radius=0.08,
+            width=sub_box_width,
+            height=0.5,
+            color=color,
+            fill_color=color,
+            fill_opacity=0.18,
+            stroke_width=1.5,
+        ).move_to(box.get_center() + RIGHT * (sub_box_width/2 + 0.05))
+        tools_text = Text("Tools", font_size=12, color=color, weight=BOLD).move_to(tools_bar)
+        return VGroup(box, label, llm_bar, llm_text, tools_bar, tools_text)
 
     def make_user_icon(self, color=BLUE_C):
         head = Circle(radius=0.25, color=color, fill_color=color, fill_opacity=0.9, stroke_width=2)
@@ -250,7 +270,7 @@ class Act1SettingTheStage(Scene):
 
         # Resize LLM box and move user to match the scene 1.2 layout.
         target_box = RoundedRectangle(
-            corner_radius=0.2, width=3.0, height=3.2,
+            corner_radius=0.2, width=3.0, height=4,
             color=BLUE, fill_color=DARK_GREY, fill_opacity=0.4, stroke_width=2.5,
         ).move_to(LEFT * 0.5)
         target_label = Text("LLM", font_size=24, color=BLUE, weight=BOLD).next_to(
@@ -355,12 +375,10 @@ class Act1SettingTheStage(Scene):
         self.play(GrowArrow(prompt_arr), FadeIn(prompt_lbl), run_time=0.6)
         self.wait(0.4)
 
-        def 
-
         selected_box = RoundedRectangle(
             corner_radius=0.08, width=2.4, height=0.7,
             fill_color="#2b2244", fill_opacity=1, stroke_color=PURPLE_C, stroke_width=1.5,
-        ).move_to(c + DOWN * 0.75)
+        ).move_to(c + DOWN * 0.85)
         selected_lbl = Text(
             "Selected tool\nand arguments", font_size=11, color=PURPLE_C, weight=BOLD
         ).move_to(selected_box)
@@ -368,40 +386,35 @@ class Act1SettingTheStage(Scene):
         result_box = RoundedRectangle(
             corner_radius=0.08, width=2.4, height=0.42,
             fill_color="#5D2647", fill_opacity=1, stroke_color=GREEN_C, stroke_width=1.5,
-        ).move_to(c + DOWN * 1.25)
+        ).move_to(c + DOWN * 1.5)
         result_lbl = Text("Tool Result", font_size=11, color=GREEN_C, weight=BOLD).move_to(result_box)
         result_dots = VGroup(
-            Dot(radius=0.045, color=GREY_B),
-            Dot(radius=0.045, color=GREY_B),
-            Dot(radius=0.045, color=GREY_B),
+            Dot(radius=0.03, color=GREY_B),
+            Dot(radius=0.03, color=GREY_B),
+            Dot(radius=0.03, color=GREY_B),
         ).arrange(RIGHT, buff=0.12).next_to(result_box, DOWN, buff=0.12)
 
-        def tool_cycle(i):
-            tool_call_arr = Arrow(
-                selected_box.get_right()+UP * 0.05, tools_box.get_left(),
-                color=RED_C, buff=0.08, stroke_width=2.5,
-            )
-            tool_call_lbl = Text("Tool Call", font_size=13, color=RED_C).next_to(tool_call_arr, UP, buff=0.08)
-            tool_result_arr = Arrow(
-                tools_box.get_left()+DOWN * 0.05, result_box.get_right(),
-                color=GREEN_C, buff=0.08, stroke_width=2.5,
-            ).shift(DOWN * 0.05)
-            tool_result_lbl = Text("Result", font_size=13, color=GREEN_C).next_to(tool_result_arr, DOWN, buff=0.08)
-            selected_box =
-            self.play(FadeIn(selected_box), FadeIn(selected_lbl), run_time=0.5)
-            self.play(GrowArrow(tool_call_arr), FadeIn(tool_call_lbl), run_time=0.5)
-            self.play(FadeIn(result_box), FadeIn(result_lbl), run_time=0.35)
-            self.play(GrowArrow(tool_result_arr), FadeIn(tool_result_lbl), run_time=0.5)
-            self.wait(0.25)
-            self.play(
-                FadeOut(tool_call_arr), FadeOut(tool_call_lbl),
-                FadeOut(tool_result_arr), FadeOut(tool_result_lbl),
-                # FadeOut(result_box), FadeOut(result_lbl), FadeOut(result_dots),
-                run_time=0.35,
-            )
+        tool_call_arr = Arrow(
+            selected_box.get_right()+UP * 0.05, tools_box.get_left(),
+            color=RED_C, buff=0.08, stroke_width=2.5,
+        )
+        tool_call_lbl = Text("Tool Call", font_size=13, color=RED_C).next_to(tool_call_arr, UP, buff=0.08)
+        tool_result_arr = Arrow(
+            tools_box.get_left()+DOWN * 0.05, result_box.get_right(),
+            color=GREEN_C, buff=0.08, stroke_width=2.5,
+        ).shift(DOWN * 0.05)
+        tool_result_lbl = Text("Result", font_size=13, color=GREEN_C).next_to(tool_result_arr, DOWN, buff=0.08)
+        self.play(FadeIn(selected_box), FadeIn(selected_lbl), run_time=0.5)
+        self.play(GrowArrow(tool_call_arr), FadeIn(tool_call_lbl), run_time=0.5)
+        self.play(GrowArrow(tool_result_arr), FadeIn(tool_result_lbl), run_time=0.5)
+        self.play(FadeIn(result_box), FadeIn(result_lbl), run_time=0.35)
+        self.wait(0.25)
+        self.play(
+            FadeOut(tool_call_arr), FadeOut(tool_call_lbl),
+            FadeOut(tool_result_arr), FadeOut(tool_result_lbl),
+            run_time=0.35,
+        )
 
-        tool_cycle(1)
-        tool_cycle(2)
         self.play(FadeIn(result_dots), run_time=0.3)
         self.play(FadeIn(result_box), FadeIn(result_lbl), FadeIn(result_dots), run_time=0.4)
         self.wait(0.4)
@@ -427,70 +440,45 @@ class Act1SettingTheStage(Scene):
         self.play(GrowArrow(resp_arr), FadeIn(resp_lbl), run_time=0.7)
         self.wait(2.0)
 
+        coordinator_agent = self.make_agent_box(
+                "Coordinator Agent", BLUE
+            ).move_to(LEFT * 3.5)
+
         self.play(
             FadeOut(VGroup(
-                agent_box, agent_lbl,
-                user, llm_box, llm_label, tools_grp,
                 sys_bar, sys_lbl, tool_bar, tool_bar_lbl, usr_bar, usr_lbl,
                 inject_line,
                 prompt_arr, prompt_lbl,
                 selected_box, selected_lbl,
                 result_box, result_lbl, result_dots,
                 result_arr, result_flow_lbl,
-                resp_arr, resp_lbl, cap4,
+                resp_arr, resp_lbl,
+                cap4,
+                tool_items,
             )),
+            run_time=0.25,
+        )
+
+        self.play(
+            Transform(agent_box, coordinator_agent[0]),
+            Transform(agent_lbl, coordinator_agent[1]),
+            Transform(llm_box, coordinator_agent[2]),
+            Transform(llm_label, coordinator_agent[3]),
+            Transform(tools_box, coordinator_agent[4]),
+            Transform(tools_header, coordinator_agent[5]),
             run_time=1.0,
         )
 
     # ─── Scene 1.3 — Introducing the cast ────────────────────────────────────
 
     def scene_1_3(self):
-        coord = self.make_agent_box(
-            "Coordinator", BLUE, "Manages the overall task"
-        ).move_to(LEFT * 3.5)
         social = self.make_agent_box(
-            "Social Media\nExpert", PURPLE, "Advertising strategies & CR"
+            "Social Media\nExpert", PURPLE
         ).move_to(RIGHT * 2.5 + UP * 1.5)
         math = self.make_agent_box(
-            "Mathematician", ORANGE, "Calculates CAC and ROI"
+            "Mathematician", ORANGE
         ).move_to(RIGHT * 2.5 + DOWN * 1.5)
 
-        cap1 = self.make_caption(
-            "We split the work across specialized agents — but how do they communicate?"
-        )
-
-        self.play(FadeIn(coord), run_time=0.8)
         self.play(FadeIn(social), run_time=0.7)
         self.play(FadeIn(math), run_time=0.7)
-        self.play(FadeIn(cap1), run_time=0.5)
-        self.wait(2.5)
-
-        # Vertical dotted divider
-        divider = DashedLine(
-            UP * 3.9, DOWN * 3.9, color=GREY_B, dash_length=0.22, dashed_ratio=0.5
-        )
-        lbl_left = Text("Strategy 1:\nSubagents as Tools", font_size=20, color=WHITE).move_to(
-            LEFT * 3.2 + UP * 3.2
-        )
-        lbl_right = Text("Strategy 2:\nHandoff", font_size=20, color=WHITE).move_to(
-            RIGHT * 3.2 + UP * 3.2
-        )
-
-        self.play(Create(divider), FadeIn(lbl_left), FadeIn(lbl_right), run_time=1.0)
-        self.wait(1.0)
-
-        # Dim right side; left side stays bright — Act 2 begins on the left
-        self.play(
-            social.animate.set_opacity(0.25),
-            math.animate.set_opacity(0.25),
-            lbl_right.animate.set_opacity(0.25),
-            run_time=1.0,
-        )
-        self.wait(1.5)
-        self.play(FadeOut(cap1), run_time=0.5)
-        self.wait(0.5)
-
-
-# to do 1.2
-# add boxes to llm: "Selected tool and arguments", then arrow to tools, arrow from tools, added box "Tool Result", add 3 dots under the box, and redrew a few times arroeto tolls and back (showing tools can be called sever times untill llm decides to respond to user)
-make new blocsl uppdear at the bottom
+        self.wait(5)
