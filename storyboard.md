@@ -59,18 +59,20 @@ Three acts, ~3-4 minutes total. Narration-style pacing. Each scene fades or tran
 
 ### Scene 2.2 — First tool call: Social Media Agent
 - Coordinator generates a glowing green tool call bubble:
-  `ask_social_Agent("Research advertising strategies and estimate conversion rates for each")`
+  `call_social_agent("Research advertising strategies and estimate conversion rates for each")`
 - Bubble travels right toward the Social Media Agent group
-- Social Media Agent works (add a loading indicator near it), small arrows (if possible, curved) between Social Media Agent's "LLM" and "Tools" boxes
+- Social Media Agent works (add a loading sign indicator near it). With small arrows (if possible, curved) going between Social Media Agent's "LLM" and "Tools" boxes, show that some interanl process is going inside the Social Media Agent
 - Returns a result bubble: *"SEO: CR 3%, Paid Social: CR 5%, Email: CR 8%"*
 
 ### Scene 2.3 — Second tool call: Mathematician (not as detailed as Social Media Agent)
-- Coordinator's context window updates — bar "LLM" now shows the received result
+- Coordinator's context window updates — box "LLM" now has new box with the received result
 - Coordinator generates second tool call:
   `ask_mathematician("Calculate CAC and ROI for: SEO CR 3%, Paid Social CR 5%, Email CR 8%")`
 - Bubble travels to Mathematician group
-- Loading indicator for 2 seconds
+- Similar to 2.2 some internal process if going
 - Mathematician returns a structured result bubble (add a small mock)
+
+User has answered your questions: "How should the Coordinator's expansion in Scene 2.1 look? (It currently ends Act 1 as a compact box with LLM+Tools sub-bars in blue.)"="Hybrid", "When a subagent works (Social Media Agent in 2.2, Mathematician in 2.3), how should the 'internal processing' look?"="Pulse + curved arrows only", "How should the Coordinator's context grow between tool calls in 2.3? (Storyboard: 'context window updates — LLM box now has new box with the received result')"="Stack + final summary", "For the result bubble texts: should I use exact storyboard mocks or expand slightly for clarity?"="Shorter, punchier". You can now continue with the user's answers in mind.
 
 
 ## ACT 3: Handoff Strategy (~90 seconds)
