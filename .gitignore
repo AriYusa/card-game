@@ -1,4 +1,6 @@
-uv.lock
-.venv/
-.env
 __pycache__/
+.venv/
+.claude/
+media/
+uv.lock
+.env

@@ -5,9 +5,5 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "google-adk==1.28.0",
-    "langfuse>=4.5.1",
-    "litellm==1.83.14",
-    "openinference-instrumentation-google-adk>=0.1.10",
-    "python-dotenv==1.2.2",
+    "manim>=0.20.1",
 ]
