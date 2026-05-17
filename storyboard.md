@@ -72,7 +72,13 @@ Three acts, ~3-4 minutes total. Narration-style pacing. Each scene fades or tran
 - Similar to 2.2 some internal process if going
 - Mathematician returns a structured result bubble (add a small mock)
 
-User has answered your questions: "How should the Coordinator's expansion in Scene 2.1 look? (It currently ends Act 1 as a compact box with LLM+Tools sub-bars in blue.)"="Hybrid", "When a subagent works (Social Media Agent in 2.2, Mathematician in 2.3), how should the 'internal processing' look?"="Pulse + curved arrows only", "How should the Coordinator's context grow between tool calls in 2.3? (Storyboard: 'context window updates — LLM box now has new box with the received result')"="Stack + final summary", "For the result bubble texts: should I use exact storyboard mocks or expand slightly for clarity?"="Shorter, punchier". You can now continue with the user's answers in mind.
+ "How should the Coordinator's expansion in Scene 2.1 look? (It currently ends Act 1 as a compact box with LLM+Tools sub-bars in blue.)"="Hybrid", 
+ 
+ "When a subagent works (Social Media Agent in 2.2, Mathematician in 2.3), how should the 'internal processing' look?"="Pulse + curved arrows only", 
+
+ "How should the Coordinator's context grow between tool calls in 2.3? (Storyboard: 'context window updates — LLM box now has new box with the received result')"="Stack + final summary",
+ 
+  "For the result bubble texts: should I use exact storyboard mocks or expand slightly for clarity?"="Shorter, punchier". You can now continue with the user's answers in mind.
 
 
 ## ACT 3: Handoff Strategy (~90 seconds)
